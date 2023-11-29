@@ -12,5 +12,7 @@ app.get("/api/users", usersControllers.getUsers);
 app.get("/api/users/:id", usersControllers.getUserById);
 app.post("/api/movies", movieControllers.postMovie);
 app.post("/api/users", usersControllers.postUser);
+app.put("/api/movies/:id", movieControllers.updateMovie);
+app.put("/api/users/:id", usersControllers.updateUser);
 
 module.exports = app;
