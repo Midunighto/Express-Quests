@@ -3,7 +3,7 @@ const Joi = require("joi");
 const movieSchema = Joi.object({
   title: Joi.string().max(255).required(),
   director: Joi.string().max(255).required(),
-  year: Joi.number().integer().max(255).required(),
+  year: Joi.number().integer().max(2050).required(),
   color: Joi.string().max(255).required(),
   duration: Joi.number().integer().required(),
 });
